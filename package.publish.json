@@ -1,0 +1,30 @@
+{
+  "name": "island-design-uni",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A lightweight uni-app component library built with Vue3 and TypeScript.",
+  "main": "index.ts",
+  "types": "index.ts",
+  "keywords": [
+    "island-design-uni",
+    "uni-app",
+    "component-library",
+    "vue3",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/island-design-uni.git"
+  },
+  "engines": {
+    "HBuilderX": "^3.8.7"
+  },
+  "peerDependencies": {
+    "vue": ">=3.2.0"
+  },
+  "exports": {
+    ".": "./index.ts",
+    "./components/island-scroll": "./components/island-scroll/index.ts",
+    "./components/island-scroll/island-scroll.vue": "./components/island-scroll/island-scroll.vue"
+  }
+}
