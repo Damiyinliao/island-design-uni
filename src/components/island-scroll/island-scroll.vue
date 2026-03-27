@@ -34,12 +34,7 @@
 
 <script lang="ts">
 export default {
-  name: 'IslandScroll',
-  options: {
-    addGlobalClass: true,
-    virtualHost: true,
-    styleIsolation: 'shared'
-  }
+  name: 'IslandScroll'
 }
 </script>
 
@@ -133,13 +128,12 @@ function handleUpper() {
 
 function handleLoad() {
   if (props.loading || props.loadDone || loadState.pending) return
-
   loadState.pending = true
   emit('load')
   releaseLoadLockIfIdle()
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import './index.scss';
 </style>

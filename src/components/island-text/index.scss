@@ -1,0 +1,17 @@
+.text-wrapper {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.multiple-rows {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+.text-wrapper text {
+  display: block;
+}

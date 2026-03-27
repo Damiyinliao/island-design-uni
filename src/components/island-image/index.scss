@@ -1,0 +1,38 @@
+@keyframes island-image-loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.island-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &__skeleton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: var(--island-image-height);
+    background-color: #f2f2f2;
+  }
+
+  &__skeleton::after {
+    display: block;
+    width: 100%;
+    height: var(--island-image-height);
+    content: '';
+    background: linear-gradient(90deg, transparent, rgba(225, 225, 225, 0.75), transparent);
+    transform: translateX(-100%);
+    animation: island-image-loading 3s infinite;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: var(--island-image-height);
+    transition: all 0.2s;
+  }
+}

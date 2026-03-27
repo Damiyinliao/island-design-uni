@@ -78,6 +78,22 @@ export function createApp() {
 }
 ```
 
+## 在 vite.config.ts 中自动解析组件
+
+发布 `0.1.1` 及以上版本后，可以在 `UniComponents` 中使用库内置 resolver：
+
+```ts
+import UniComponents from '@uni-helper/vite-plugin-uni-components'
+import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import { IslandResolver } from 'island-design-uni/resolver'
+
+UniComponents({
+  resolvers: [WotResolver(), IslandResolver()],
+})
+```
+
+这样页面里可以直接使用 `<IslandScroll />`，不再需要手动 `import`。
+
 ## 组件说明
 
 `IslandScroll` 是一个通用滚动加载容器，提供：

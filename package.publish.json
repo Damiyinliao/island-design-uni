@@ -1,6 +1,6 @@
 {
   "name": "island-design-uni",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "license": "MIT",
   "description": "A lightweight uni-app component library built with Vue3 and TypeScript.",
   "main": "index.ts",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Damiyinliao/island-design-uni.git"
+    "url": "git+https://github.com/Damiyinliao/island-design-uni.git"
   },
   "engines": {
     "HBuilderX": "^3.8.7"
@@ -24,7 +24,18 @@
   },
   "exports": {
     ".": "./index.ts",
+    "./resolver": {
+      "types": "./resolver.d.ts",
+      "require": "./resolver.cjs",
+      "default": "./resolver.cjs"
+    },
+    "./components/island-image": "./components/island-image/index.ts",
+    "./components/island-image/island-image.vue": "./components/island-image/island-image.vue",
+    "./components/island-modal": "./components/island-modal/index.ts",
+    "./components/island-modal/island-modal.vue": "./components/island-modal/island-modal.vue",
     "./components/island-scroll": "./components/island-scroll/index.ts",
-    "./components/island-scroll/island-scroll.vue": "./components/island-scroll/island-scroll.vue"
+    "./components/island-scroll/island-scroll.vue": "./components/island-scroll/island-scroll.vue",
+    "./components/island-text": "./components/island-text/index.ts",
+    "./components/island-text/island-text.vue": "./components/island-text/island-text.vue"
   }
 }
