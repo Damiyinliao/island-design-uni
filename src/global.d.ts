@@ -2,6 +2,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AnimateModal: typeof import('./components/animate-modal')['default']
     IslandEllipsis: typeof import('./components/island-ellipsis')['default']
+    IslandIcon: typeof import('./components/island-icon')['default']
     IslandImage: typeof import('./components/island-image')['default']
     IslandLoadingPage: typeof import('./components/island-loading-page')['default']
     IslandModal: typeof import('./components/island-modal')['default']

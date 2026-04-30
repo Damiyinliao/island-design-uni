@@ -7,7 +7,9 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "pnpm run clean && esno ./scripts/build.ts",
-    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json",
+    "publish:dry-run": "pnpm run typecheck && pnpm run build && npm publish ./lib --access public --dry-run",
+    "publish:npm": "pnpm run typecheck && pnpm run build && npm publish ./lib --access public"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",

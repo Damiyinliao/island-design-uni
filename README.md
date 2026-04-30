@@ -35,11 +35,21 @@ pnpm run build
 
 ## 发布
 
+发布前先确认 `package.publish.json` 里的 `version` 没有和 npm 上已有版本重复。
+
+预演发布内容：
+
 ```bash
-pnpm run build
-cd lib
-npm publish
+pnpm run publish:dry-run
 ```
+
+正式发布：
+
+```bash
+pnpm run publish:npm
+```
+
+脚本会先执行类型检查和构建，然后把 `lib` 目录作为 npm 包发布。
 
 ## 在 uni-app 项目中使用
 

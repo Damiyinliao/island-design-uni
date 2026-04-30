@@ -31,6 +31,8 @@
     },
     "./components/island-ellipsis": "./components/island-ellipsis/index.ts",
     "./components/island-ellipsis/island-ellipsis.vue": "./components/island-ellipsis/island-ellipsis.vue",
+    "./components/island-icon": "./components/island-icon/index.ts",
+    "./components/island-icon/island-icon.vue": "./components/island-icon/island-icon.vue",
     "./components/island-image": "./components/island-image/index.ts",
     "./components/island-image/island-image.vue": "./components/island-image/island-image.vue",
     "./components/island-loading-page": "./components/island-loading-page/index.ts",

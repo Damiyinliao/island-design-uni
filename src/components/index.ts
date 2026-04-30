@@ -8,6 +8,7 @@ import IslandPopup from './island-popup'
 import IslandEllipsis from './island-ellipsis'
 import IslandTransition from './island-transition'
 import IslandLoadingPage from './island-loading-page'
+import IslandIcon from './island-icon'
 
 export const components = [
   IslandText,
@@ -19,7 +20,8 @@ export const components = [
   IslandPopup,
   IslandEllipsis,
   IslandTransition,
-  IslandLoadingPage
+  IslandLoadingPage,
+  IslandIcon
 ]
 
 export { IslandText }
@@ -32,3 +34,4 @@ export { IslandPopup }
 export { IslandEllipsis }
 export { IslandTransition }
 export { IslandLoadingPage }
+export { IslandIcon }
