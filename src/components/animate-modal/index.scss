@@ -1,0 +1,119 @@
+.animate-modal {
+  &__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28rpx;
+    align-items: center;
+    overflow: visible;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    will-change: transform, opacity;
+  }
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82rpx;
+    height: 82rpx;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 14rpx 36rpx rgba(8, 72, 144, 0.18);
+    transition:
+      transform 0.24s ease,
+      opacity 0.24s ease;
+    &:active {
+      opacity: 0.9;
+      transform: scale(0.94);
+    }
+    &_icon {
+      position: relative;
+      width: 40rpx;
+      height: 40rpx;
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 5rpx;
+        content: '';
+        background: #084890;
+        transform: translate(-50%, -50%);
+      }
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+  &__mask-enter {
+    animation: animate-modal-mask-enter 0.28s ease forwards;
+  }
+  &__mask-leave {
+    animation: animate-modal-mask-leave 0.24s ease forwards;
+  }
+  &__modal-enter {
+    animation: animate-modal-enter 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  &__modal-leave {
+    animation: animate-modal-leave 0.26s cubic-bezier(0.4, 0, 1, 1) forwards;
+  }
+}
+
+@keyframes animate-modal-mask-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-modal-mask-leave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-modal-enter {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 28rpx)) scale(0.92);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes animate-modal-leave {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 18rpx)) scale(0.95);
+  }
+}

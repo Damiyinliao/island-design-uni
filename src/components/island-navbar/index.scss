@@ -1,0 +1,107 @@
+.island-navbar {
+  position: relative;
+
+  &__inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    display: flex;
+    height: var(--nav-height);
+    padding-top: var(--status-bar-height);
+    background: var(--nav-background);
+  }
+
+  &__left,
+  &__right {
+    width: var(--nav-right-width);
+    height: 100%;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 var(--nav-padding-left);
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__back--active {
+    opacity: 0.5;
+  }
+
+  &__back-icon {
+    width: 24rpx;
+    height: 48rpx;
+    margin: 0 12rpx;
+    font-size: 24rpx;
+    background-color: rgb(0, 0, 0, 0.9);
+    // eslint-disable-next-line max-len
+    -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E")
+      no-repeat 50% 50%;
+    // eslint-disable-next-line max-len
+    mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E")
+      no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+
+  &__home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64rpx;
+    height: 100%;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__home-icon {
+    position: relative;
+    box-sizing: border-box;
+    width: 36rpx;
+    height: 30rpx;
+    margin-top: 8rpx;
+    border: 4rpx solid #000;
+    border-top: 0;
+    border-radius: 2rpx;
+
+    &::before {
+      position: absolute;
+      top: -16rpx;
+      left: 50%;
+      width: 26rpx;
+      height: 26rpx;
+      content: '';
+      border-top: 4rpx solid #000;
+      border-left: 4rpx solid #000;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+.island-ellipsis {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+
+  &__wordbreak {
+    word-break: break-all;
+  }
+
+  &__text {
+    display: inline;
+    color: var(--island-ellipsis-expand-collapse-color, #3460fa);
+  }
+
+  &__text:active {
+    opacity: 0.7;
+  }
+
+  &__copy {
+    position: absolute;
+    top: -999999rpx;
+    left: -999999rpx;
+    pointer-events: none;
+    visibility: hidden;
+    word-break: break-all;
+  }
+}

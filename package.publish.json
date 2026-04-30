@@ -29,13 +29,25 @@
       "require": "./resolver.cjs",
       "default": "./resolver.cjs"
     },
+    "./components/island-ellipsis": "./components/island-ellipsis/index.ts",
+    "./components/island-ellipsis/island-ellipsis.vue": "./components/island-ellipsis/island-ellipsis.vue",
     "./components/island-image": "./components/island-image/index.ts",
     "./components/island-image/island-image.vue": "./components/island-image/island-image.vue",
+    "./components/island-loading-page": "./components/island-loading-page/index.ts",
+    "./components/island-loading-page/island-loading-page.vue": "./components/island-loading-page/island-loading-page.vue",
+    "./components/animate-modal": "./components/animate-modal/index.ts",
+    "./components/animate-modal/animate-modal.vue": "./components/animate-modal/animate-modal.vue",
     "./components/island-modal": "./components/island-modal/index.ts",
     "./components/island-modal/island-modal.vue": "./components/island-modal/island-modal.vue",
+    "./components/island-navbar": "./components/island-navbar/index.ts",
+    "./components/island-navbar/island-navbar.vue": "./components/island-navbar/island-navbar.vue",
+    "./components/island-popup": "./components/island-popup/index.ts",
+    "./components/island-popup/island-popup.vue": "./components/island-popup/island-popup.vue",
     "./components/island-scroll": "./components/island-scroll/index.ts",
     "./components/island-scroll/island-scroll.vue": "./components/island-scroll/island-scroll.vue",
     "./components/island-text": "./components/island-text/index.ts",
-    "./components/island-text/island-text.vue": "./components/island-text/island-text.vue"
+    "./components/island-text/island-text.vue": "./components/island-text/island-text.vue",
+    "./components/island-transition": "./components/island-transition/index.ts",
+    "./components/island-transition/island-transition.vue": "./components/island-transition/island-transition.vue"
   }
 }

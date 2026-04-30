@@ -1,0 +1,57 @@
+@keyframes island-loading-page-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.island-loading-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &__transition {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+    font-size: 18px;
+    color: #c8c8c8;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--island-loadingpage-icon-margin-bottom, 10px);
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__spinner {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+    animation: island-loading-page-rotate 1s linear infinite;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+}

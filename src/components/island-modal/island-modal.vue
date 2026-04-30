@@ -40,7 +40,7 @@
 </template>
 <script lang="ts">
 export default {
-  name: 'IslandText'
+  name: 'IslandModal'
 }
 </script>
 <script setup lang="ts">

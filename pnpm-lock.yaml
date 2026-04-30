@@ -11,6 +11,9 @@ importers:
       '@types/node':
         specifier: ^22.13.10
         version: 22.19.15
+      '@uni-helper/uni-app-types':
+        specifier: ^1.0.0-alpha.6
+        version: 1.0.0-alpha.8(typescript@5.9.3)(vue@3.5.31(typescript@5.9.3))
       '@vue/compiler-sfc':
         specifier: ^3.5.13
         version: 3.5.31
@@ -210,6 +213,13 @@ packages:
 
   '@types/node@22.19.15':
     resolution: {integrity: sha512-F0R/h2+dsy5wJAUe3tAU6oqa2qbWY5TpNfL/RGmo1y38hiyO1w3x2jPtt76wmuaJI4DQnOBu21cNXQ2STIUUWg==}
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.8':
+    resolution: {integrity: sha512-XBMF/QfRyW+ObT9J3Wsy+Za5y2ArNdxssuaqiVm5ty/JSfDwwT6IVqiQbDfe7hFM5NLYgHmjdsRqISgr2MOaXw==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^5.0.0
+      vue: ^3.0.0
 
   '@volar/language-core@2.4.15':
     resolution: {integrity: sha512-3VHw+QZU0ZG9IuQmzT68IyN4hZNd9GchGPhbD9+pa8CVv7rnoOZwo7T8weIbrRmihqy3ATpdfXFnqRrfPVK6CA==}
@@ -499,6 +509,11 @@ snapshots:
   '@types/node@22.19.15':
     dependencies:
       undici-types: 6.21.0
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.8(typescript@5.9.3)(vue@3.5.31(typescript@5.9.3))':
+    dependencies:
+      typescript: 5.9.3
+      vue: 3.5.31(typescript@5.9.3)
 
   '@volar/language-core@2.4.15':
     dependencies:
